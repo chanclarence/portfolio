@@ -1,0 +1,313 @@
+/* BASIC STYLING */
+html, body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #EF6C33;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+main {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* NAVBAR STYLING */ 
+#navbar {
+    font-family: 'Oswald', sans-serif;
+    background-color: #0C4A60;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#navbar > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2em;
+    margin: 0 1em;
+}
+
+#navbar > .container > ul {
+    text-align: center;
+}
+
+#navbar > .container > ul > li {
+    display: inline-block;
+}
+
+#nav-brand > a {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #E1DDDB;
+    text-decoration: none;
+    background-color: inherit;
+    padding: 0.5em;
+    border-radius: 2px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #ABDFF1;
+}
+
+/* WELCOME SECTION STYLING */
+#welcome-section {
+    background-color: #E1DDDB;
+    height: 100vh;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-text {
+    position: relative;
+    text-align: center;
+    margin: 0.2em;
+}
+
+/* PROJECTS SECTION STYLING */
+#projects {
+    background-color: grey;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+#projects > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3em 1fr 1fr;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+#projects-heading {
+    color: white;
+    text-align: center;
+    grid-column: span 2;
+    margin: 0;
+}
+
+.project-tile {
+    background-color: black;
+    width: 300px;
+    height: 150px;
+    border: 4px solid #354649;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-tile > a {
+    text-decoration: none;
+    background-color: rgba(60, 60, 60, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-tile > a > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+}
+
+#omgrofl {
+    background-image: url(images/omgrofl_doc_preview.png);
+    background-size: cover;
+}
+
+#atas-beans {
+    background-image: url(images/atas_beans_preview.png);
+    background-size: cover;
+}
+
+#grab-uber {
+    background-image: url(images/grab_uber_survey_preview.png);
+    background-size: cover;
+}
+
+#twitch-streamers {
+    background-image: url(images/twitch_app_preview.png);
+    background-size: cover;
+}
+
+/* PROJECT TILE HOVER EFFECTS */
+.project-tile:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.project-tile:hover a {
+    background-color: rgba(60, 60, 60, 0.25);
+}
+
+/* CONTACT ME SECTION STYLING */
+#contact {
+    background-color: #E1DDDB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1em;
+    position: relative;
+}
+
+#contact > .container {
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3em;
+}
+
+/* SOCIAL MEDIA ICONS STYLING */
+#contact > .container > a > img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#twitter-icon {
+    background-color: #1DA1F2;
+}
+#instagram-icon {
+    background-color: #E4405F;
+}
+#github-icon {
+    background-color: #181717;
+}
+#fcc-icon {
+    background-color: #006400;
+}
+
+/* SOCIAL MEDIA ICONS HOVER EFFECTS */
+#contact > .container > a > img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 1em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 680px) {
+    /* PROJECTS SECTION STYLING */
+    #projects > .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3em 1fr 1fr 1fr 1fr;
+        padding: 30px;
+        grid-gap: 30px;
+    }
+
+    #projects-heading {
+        grid-column: span 1;
+        margin: 0;
+    }
+
+    .project-tile {
+        width: 250px;
+        height: 125px;
+    }
+
+    #omgrofl, #atas-beans, #grab-uber, #twitch-streamers {
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@media (max-width: 550px) {
+    /* NAVBAR STYLING */
+    #navbar > .container {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 1em;
+    }
+
+    #navbar > .container > ul {
+        padding: 0; /* for proper alignment of of nav-links */
+    }
+
+    /* HASHTAG LINK OFFSET FOR FIXED HEADER */
+    .anchor {
+        display: block; 
+        content: " "; 
+        margin-top: -110px; 
+        height: 110px; 
+        visibility: hidden; 
+        pointer-events: none;  
+    }
+}
+
+@media (max-width: 480px) {
+    /* CONTACT ME SECTION STYLING */
+    #contact > .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 1.5em;
+        grid-gap: 1.5em;
+    }
+}
+
+
+
+
+
+
+/* color experimentation */
+
+/* 
+#navbar {
+    background-color: #0C4A60;
+}
+
+#welcome-section {
+    background-color: #EF6C33;
+    background-color:#E1DDDB;
+}
+
+#projects {
+    background-color: grey;
+}
+
+#contact {
+    background-color: #E1DDDB;
+}
+
+h1 {
+    color: #EF6C33;
+} */

@@ -181,7 +181,6 @@ main {
     align-items: center;
     text-align: center;
     padding: 0 1em;
-    position: relative;
 }
 
 #contact > .container {
@@ -226,8 +225,6 @@ footer {
     font-weight: 300;
     font-size: 0.8em;
     opacity: 0.6;
-    position: absolute;
-    bottom: 1em;
 }
 
 /* MEDIA QUERIES */

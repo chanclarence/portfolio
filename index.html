@@ -8,26 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="scrollspy.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
     <header>
         <nav id="navbar">
             <div class="container">
-            <span id="nav-brand">
-                <a href="index.html">Clarence Chan</a>
-            </span>
-            <ul>
-                <li>
-                    <a href="#welcome-section" class="nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#projects-anchor" class="nav-link">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact-anchor" class="nav-link">Contact Me</a>
-                </li>
-            </ul>
+                <span id="nav-brand">
+                    <a href="index.html">Clarence Chan</a>
+                </span>
+                <ul>
+                    <li class="active">
+                        <a href="#welcome-section" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -37,7 +41,6 @@
             <h1 class="welcome-text">Hey there,</h1>
             <h2 class="welcome-text">Welcome to my portfolio!</h2>
         </section>
-        <a id="projects-anchor" class="anchor"></a>
         <section id="projects">
             <div class="container">
                 <h1 id="projects-heading">Projects</h1>
@@ -63,7 +66,6 @@
                 </div>
             </div>
         </section>
-        <a id="contact-anchor" class="anchor"></a>
         <section id="contact">
             <h1>Interested to work together?</h1>
             <h2>Reach out to me via Twitter, Instagram, GitHub, or freeCodeCamp.</h2>

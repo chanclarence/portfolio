@@ -95,7 +95,7 @@ main {
 
 #projects > .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 3em 1fr 1fr;
     grid-gap: 30px;
     padding: 30px;
@@ -104,18 +104,16 @@ main {
 #projects-heading {
     color: white;
     text-align: center;
-    grid-column: span 2;
+    grid-column: span 3;
     margin: 0;
 }
 
 .project-tile {
     background-color: black;
-    width: 300px;
-    height: 150px;
+    width: 243px;
+    height: 134px;
     border: 4px solid #354649;
     border-radius: 8px;
-    justify-content: center;
-    align-items: center;
 }
 
 .project-tile > a {
@@ -140,22 +138,38 @@ main {
 
 #omgrofl {
     background-image: url(images/omgrofl_doc_preview.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #atas-beans {
     background-image: url(images/atas_beans_preview.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #grab-uber {
     background-image: url(images/grab_uber_survey_preview.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #twitch-streamers {
     background-image: url(images/twitch_app_preview.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#local-weather-app {
+    background-image: url(images/weather_app_preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#random-quote-machine {
+    background-image: url(images/quote_machine_preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* PROJECT TILE HOVER EFFECTS */
@@ -198,8 +212,8 @@ main {
     padding: 10px;
 }
 
-#twitter-icon {
-    background-color: #1DA1F2;
+#linkedin-icon {
+    background-color: #0077B5;
 }
 #instagram-icon {
     background-color: #E4405F;
@@ -228,6 +242,21 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 920px) {
+    /* PROJECTS SECTION STYLING */
+    #projects > .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3em 1fr 1fr 1fr;
+        padding: 30px;
+        grid-gap: 30px;
+    }
+
+    #projects-heading {
+        grid-column: span 2;
+        margin: 0;
+    }
+}
+
 @media (max-width: 680px) {
     /* PROJECTS SECTION STYLING */
     #projects > .container {
@@ -240,16 +269,6 @@ footer {
     #projects-heading {
         grid-column: span 1;
         margin: 0;
-    }
-
-    .project-tile {
-        width: 250px;
-        height: 125px;
-    }
-
-    #omgrofl, #atas-beans, #grab-uber, #twitch-streamers {
-        justify-self: center;
-        align-self: center;
     }
 }
 

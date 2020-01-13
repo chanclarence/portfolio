@@ -296,8 +296,8 @@ footer {
 @media (max-width: 480px) {
     /* CONTACT ME SECTION STYLING */
     #contact > .container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
         padding: 1.5em;
         grid-gap: 1.5em;
     }
